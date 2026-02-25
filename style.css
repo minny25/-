@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        /* กำหนดฟอนต์และพื้นหลัง */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* ส่วนหัวและเมนู */
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ส่วนเนื้อหา */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 3px solid #4A90E2;
+        }
+
+        .content::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* กล่องรูปงานอดิเรก */
+        .hobby-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .hobby-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .hobby-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+
+        /* ส่วนท้าย */
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8em;
+            color: #f38b8b;
+            background-color: #834545;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>เว็บไซต์แนะนำตัว</h1>
+        <nav>
+            <a href="#">หน้าแรก</a>
+            <a href="#">ประวัติ</a>
+            <a href="#">งานอดิเรก</a>
+            <a href="#">ติดต่อ</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <img src="profile.jpg" alt="รูปโปรไฟล์" class="profile-img">
+
+        <h2>เกี่ยวกับฉัน</h2>
+        <p>
+            สวัสดีครับ/ค่ะ นี่คือตัวอย่างเว็บไซต์แนะนำตัวที่สร้างด้วย HTML5 และ CSS
+        </p>
+
+        <h2>งานอดิเรก</h2>
+        <div class="hobby-gallery">
+            <div class="hobby-item">
+                <img src="hobby1.jpg" alt="งานอดิเรก 1">
+                <p>ถ่ายภาพ</p>
+            </div>
+            <div class="hobby-item">
+                <img src="hobby2.jpg" alt="งานอดิเรก 2">
+                <p>ท่องเที่ยว</p>
+            </div>
+            <div class="hobby-item">
+                <img src="hobby3.jpg" alt="งานอดิเรก 3">
+                <p>อ่านหนังสือ</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 My Profile Website
+    </footer>
+
+</body>
+</html>
